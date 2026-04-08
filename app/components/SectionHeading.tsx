@@ -14,7 +14,7 @@ export default function SectionHeading({ title, subtitle }: SectionHeadingProps)
           {subtitle}
         </p>
       )}
-      <div className="mt-6 mx-auto w-16 h-0.5 bg-warm-300" />
+      <div className="mt-6 mx-auto w-16 h-0.5 bg-sky-400" />
     </div>
   );
 }

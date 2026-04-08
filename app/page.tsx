@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "./components/SectionHeading";
 
@@ -5,17 +6,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-warm-100 via-warm-50 to-sage-50 py-24 md:py-32">
+      <section className="relative bg-gradient-to-br from-sky-50 via-warm-50 to-warm-100 py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-warm-500 uppercase tracking-widest text-sm mb-4">
+              <p className="text-sky-600 uppercase tracking-widest text-sm mb-4">
                 Yoga im 22. Bezirk, Wien
               </p>
               <h1 className="font-serif text-5xl md:text-6xl text-warm-800 leading-tight mb-6">
                 Körper & Geist
                 <br />
-                <span className="text-warm-500">in Einklang</span>
+                <span className="text-sky-600">in Einklang</span>
               </h1>
               <p className="text-warm-700 text-lg leading-relaxed mb-8 max-w-lg">
                 Körperbetontes Hatha-Yoga, das die Übenden in ihrer Gesamtheit
@@ -24,7 +25,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/termine"
-                  className="inline-flex items-center px-6 py-3 bg-warm-600 text-white rounded-full text-sm font-medium hover:bg-warm-700 transition-colors"
+                  className="inline-flex items-center px-6 py-3 bg-sky-600 text-white rounded-full text-sm font-medium hover:bg-sky-700 transition-colors"
                 >
                   Termine & Kurszeiten
                 </Link>
@@ -37,27 +38,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-warm-200 to-sage-200 flex items-center justify-center overflow-hidden">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/50 flex items-center justify-center">
-                    <svg
-                      className="w-12 h-12 text-warm-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3Z"
-                      />
-                    </svg>
-                  </div>
-                  <p className="font-serif text-2xl text-warm-700 italic">
-                    Take your time
-                  </p>
-                </div>
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/HeideKinzelhofer01.jpg"
+                  alt="Heide Kinzelhofer in einer Yoga-Pose am See"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -108,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-sage-50">
+      <section className="py-20 bg-sky-50">
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeading title="Wirkung von Yoga" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -167,8 +155,8 @@ export default function Home() {
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-warm-100 flex items-center justify-center">
-                  <span className="text-warm-600 font-semibold text-sm">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-sky-100 flex items-center justify-center">
+                  <span className="text-sky-700 font-semibold text-sm">
                     {item.step}
                   </span>
                 </div>
@@ -183,19 +171,19 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-warm-600 to-warm-700 text-white">
+      <section className="py-20 bg-gradient-to-br from-sky-600 to-sky-700 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-4">
             Der Einstieg ist jederzeit möglich
           </h2>
-          <p className="text-warm-200 text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-sky-100 text-lg mb-8 max-w-xl mx-auto">
             Es sind keine Grundkenntnisse erforderlich. Es gibt Abstufungen
             innerhalb der Klassen.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/termine"
-              className="px-8 py-3 bg-white text-warm-700 rounded-full font-medium hover:bg-warm-50 transition-colors"
+              className="px-8 py-3 bg-white text-sky-700 rounded-full font-medium hover:bg-sky-50 transition-colors"
             >
               Zu den Terminen
             </Link>

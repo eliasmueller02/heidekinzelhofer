@@ -1,4 +1,4 @@
-import SectionHeading from "../components/SectionHeading";
+import Image from "next/image";
 
 export const metadata = {
   title: "Über mich | Heide Kinzelhofer",
@@ -9,16 +9,31 @@ export const metadata = {
 export default function UeberMich() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-warm-100 via-warm-50 to-sage-50 py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="font-serif text-5xl md:text-6xl text-warm-800 mb-6">
-            Heide Kinzelhofer
-          </h1>
-          <p className="text-warm-600 text-lg max-w-xl mx-auto">
-            Geboren 1971 in Steyr. Verheiratet, Mutter von Paula und Lenz.
-            Naturliebhaberin.
-          </p>
+      {/* Hero with Portrait */}
+      <section className="bg-gradient-to-br from-sky-50 via-warm-50 to-warm-100 py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid md:grid-cols-[1fr_auto] gap-12 items-center">
+            <div className="text-center md:text-left">
+              <h1 className="font-serif text-5xl md:text-6xl text-warm-800 mb-6">
+                Heide Kinzelhofer
+              </h1>
+              <p className="text-warm-600 text-lg max-w-xl">
+                Geboren 1971 in Steyr. Verheiratet, Mutter von Paula und Lenz.
+                Naturliebhaberin.
+              </p>
+            </div>
+            <div className="mx-auto md:mx-0">
+              <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/HeideKinzelhofer02.jpg"
+                  alt="Heide Kinzelhofer"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -59,7 +74,7 @@ export default function UeberMich() {
                     key={item.title}
                     className="flex gap-4 p-4 rounded-lg bg-warm-50"
                   >
-                    <div className="w-1 rounded-full bg-warm-300 shrink-0" />
+                    <div className="w-1 rounded-full bg-sky-400 shrink-0" />
                     <div>
                       <h3 className="font-medium text-warm-800">
                         {item.title}
@@ -93,26 +108,26 @@ export default function UeberMich() {
                 </h3>
                 <ul className="space-y-2 text-warm-600">
                   <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-warm-400 mt-2 shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
                     Yogahome 22, Wien
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-warm-400 mt-2 shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
                     Tanzquartier Wien
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-warm-400 mt-2 shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
                     Verschiedene Schulen
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-warm-400 mt-2 shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
                     Pädagogische Hochschule Wien und Baden
                   </li>
                 </ul>
               </div>
 
-              <div className="p-4 rounded-lg bg-sage-50 border border-sage-200">
-                <p className="text-sm text-sage-700">
+              <div className="p-4 rounded-lg bg-sky-50 border border-sky-200">
+                <p className="text-sm text-sky-700">
                   Mitglied der Berufsvereinigung für Zeitgenössische
                   Tanzpädagogik
                 </p>

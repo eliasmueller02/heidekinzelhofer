@@ -29,9 +29,9 @@ export default function Navigation() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`text-sm tracking-wide uppercase transition-colors hover:text-warm-600 ${
+                className={`text-sm tracking-wide uppercase transition-colors hover:text-sky-600 ${
                   pathname === link.href
-                    ? "text-warm-600 font-semibold"
+                    ? "text-sky-600 font-semibold"
                     : "text-warm-800"
                 }`}
               >
@@ -83,7 +83,7 @@ export default function Navigation() {
                   onClick={() => setOpen(false)}
                   className={`block py-2 text-sm tracking-wide uppercase transition-colors ${
                     pathname === link.href
-                      ? "text-warm-600 font-semibold"
+                      ? "text-sky-600 font-semibold"
                       : "text-warm-800"
                   }`}
                 >

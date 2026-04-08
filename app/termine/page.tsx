@@ -11,7 +11,7 @@ export default function Termine() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-warm-100 via-warm-50 to-sage-50 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-warm-100 via-warm-50 to-sky-50 py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-serif text-5xl md:text-6xl text-warm-800 mb-6">
             Termine & Kurszeiten
@@ -76,7 +76,7 @@ export default function Termine() {
           </div>
 
           {/* Location */}
-          <div className="mt-12 max-w-2xl mx-auto bg-sage-50 rounded-xl p-8 text-center">
+          <div className="mt-12 max-w-2xl mx-auto bg-sky-50 rounded-xl p-8 text-center">
             <h3 className="font-serif text-xl text-warm-800 mb-2">Kursort</h3>
             <p className="text-warm-700 font-medium">Yogahome 22</p>
             <p className="text-warm-500">Pappelweg 3, 1220 Wien</p>

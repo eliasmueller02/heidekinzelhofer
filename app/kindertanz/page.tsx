@@ -11,9 +11,9 @@ export default function Kindertanz() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-sage-50 via-warm-50 to-sage-100 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-sky-50 via-warm-50 to-sky-100 py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-sage-500 uppercase tracking-widest text-sm mb-4">
+          <p className="text-sky-500 uppercase tracking-widest text-sm mb-4">
             Für Kinder von 4 bis 10 Jahren
           </p>
           <h1 className="font-serif text-5xl md:text-6xl text-warm-800 mb-6">
@@ -31,8 +31,8 @@ export default function Kindertanz() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10">
             {/* 4-5 Jahre */}
-            <div className="bg-sage-50 rounded-2xl p-8 md:p-10">
-              <div className="inline-flex items-center px-4 py-1.5 bg-sage-200 text-sage-700 rounded-full text-sm font-medium mb-6">
+            <div className="bg-sky-50 rounded-2xl p-8 md:p-10">
+              <div className="inline-flex items-center px-4 py-1.5 bg-sky-200 text-sky-700 rounded-full text-sm font-medium mb-6">
                 4 &ndash; 5 Jahre
               </div>
               <h2 className="font-serif text-2xl text-warm-800 mb-4">
@@ -86,7 +86,7 @@ export default function Kindertanz() {
       </section>
 
       {/* What they learn */}
-      <section className="py-20 bg-sage-50">
+      <section className="py-20 bg-sky-50">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
             title="Was die Kinder erleben"

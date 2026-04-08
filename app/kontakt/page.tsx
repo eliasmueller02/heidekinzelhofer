@@ -8,7 +8,7 @@ export default function Kontakt() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-warm-100 via-warm-50 to-sage-50 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-warm-100 via-warm-50 to-sky-50 py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-serif text-5xl md:text-6xl text-warm-800 mb-6">
             Kontakt
@@ -112,7 +112,7 @@ export default function Kontakt() {
           </div>
 
           {/* Kursort */}
-          <div className="mt-12 bg-sage-50 rounded-2xl p-8 md:p-10 text-center">
+          <div className="mt-12 bg-sky-50 rounded-2xl p-8 md:p-10 text-center">
             <h2 className="font-serif text-2xl text-warm-800 mb-2">Kursort</h2>
             <p className="text-warm-700 font-medium text-lg">Yogahome 22</p>
             <p className="text-warm-500">Pappelweg 3, 1220 Wien</p>
