@@ -1,32 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* Holz/Warm - from the wooden deck in the photos */
-  --color-warm-50: #faf6f1;
-  --color-warm-100: #f0e8dc;
-  --color-warm-200: #e0d0b8;
-  --color-warm-300: #c9af88;
-  --color-warm-400: #b89260;
-  --color-warm-500: #a07a4a;
-  --color-warm-600: #86643c;
-  --color-warm-700: #6b4f30;
-  --color-warm-800: #503b24;
-  --color-warm-900: #362818;
+  /* Palette aus dem Skizzen-Foto:
+     warmes Greige der Wand, Creme-Lichtflecken, Kugelschreiber-Blau */
+  --color-paper: #e9e1d2;
+  --color-ink: #2c3563;
+  --color-ink-soft: #4a5180;
+  --color-ink-faint: #7e829b;
 
-  /* Blau - from the sky and water in the photos */
-  --color-sky-50: #f0f7fc;
-  --color-sky-100: #deeef8;
-  --color-sky-200: #b8dbf0;
-  --color-sky-300: #85c1e4;
-  --color-sky-400: #4da3d4;
-  --color-sky-500: #2b87bd;
-  --color-sky-600: #1e6d9e;
-  --color-sky-700: #195880;
-  --color-sky-800: #174965;
-  --color-sky-900: #133a50;
+  /* Akzent: kräftiges Stift-Blau für Handschrift, Links & aktive Navigation */
+  --color-pen: #3f53a8;
+  --color-pen-deep: #32438c;
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --color-rule: #cdc2ac;
+
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
+  --font-serif: var(--font-eb), ui-serif, Georgia, serif;
+  --font-hand: var(--font-caveat), "Segoe Script", cursive;
 }
 
 html {
@@ -36,4 +26,22 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Echtes Bokeh – Lichtflecken aus dem Original-Foto, in die
+   Papier-Palette umgefärbt. Fixe Ebene hinter dem Inhalt. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("/bokeh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-pen) 28%, transparent);
 }

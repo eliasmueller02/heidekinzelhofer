@@ -1,130 +1,103 @@
+import Link from "next/link";
+import { PageTitle, Heading } from "../components/Editorial";
+
 export const metadata = {
-  title: "Impressum & Datenschutz | Heide Kinzelhofer",
-  description: "Impressum und Datenschutzerklärung von Heide Kinzelhofer.",
+  title: "Impressum | Heide Kinzelhofer",
+  description: "Impressum von Heide Kinzelhofer.",
 };
+
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="mt-10 max-w-xl">
+      <Heading>{title}</Heading>
+      <div className="mt-3 space-y-3 font-serif text-[15px] leading-[1.8] text-ink-soft">
+        {children}
+      </div>
+    </section>
+  );
+}
 
 export default function Impressum() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-6">
-        <h1 className="font-serif text-4xl text-warm-800 mb-10">
-          Impressum & Datenschutz
-        </h1>
+    <article>
+      <PageTitle>Impressum</PageTitle>
 
-        <div className="prose prose-warm max-w-none space-y-8 text-warm-700">
-          {/* Impressum */}
-          <div>
-            <h2 className="font-serif text-2xl text-warm-800 mb-4">
-              Impressum
-            </h2>
-            <p>
-              Heide Kinzelhofer
-              <br />
-              Schillochweg 43, 1220 Wien, Österreich
-              <br />
-              Tel.: +43 699 11445712
-              <br />
-              E-Mail:{" "}
-              <a
-                href="mailto:heide.kinzelhofer@gmx.at"
-                className="text-warm-600 underline hover:text-warm-800"
-              >
-                heide.kinzelhofer@gmx.at
-              </a>
-            </p>
-          </div>
+      <Section title="Angaben gemäß § 5 ECG und § 25 MedienG">
+        <p>
+          Heide Kinzelhofer
+          <br />
+          Unternehmensgegenstand: Yoga- und Kindertanzunterricht
+          <br />
+          Schillochweg 43/14, 1220 Wien, Österreich
+          <br />
+          Tel.:{" "}
+          <a href="tel:+4369911445712" className="text-pen hover:underline">
+            +43 699 11 44 57 12
+          </a>
+          <br />
+          E-Mail:{" "}
+          <a
+            href="mailto:heide.kinzelhofer@gmx.at"
+            className="text-pen underline-offset-4 hover:underline"
+          >
+            heide.kinzelhofer@gmx.at
+          </a>
+        </p>
+      </Section>
 
-          {/* EU Streitschlichtung */}
-          <div>
-            <h2 className="font-serif text-2xl text-warm-800 mb-4">
-              EU-Streitschlichtung
-            </h2>
-            <p>
-              Die Europäische Kommission stellt eine Plattform zur
-              Online-Streitbeilegung (OS) bereit:{" "}
-              <a
-                href="https://ec.europa.eu/consumers/odr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-warm-600 underline hover:text-warm-800"
-              >
-                https://ec.europa.eu/consumers/odr
-              </a>
-              . Wir sind nicht verpflichtet und nicht bereit, an
-              Streitbeilegungsverfahren vor einer
-              Verbraucherschlichtungsstelle teilzunehmen.
-            </p>
-          </div>
+      <Section title="Verbraucherstreitbeilegung">
+        <p>
+          Ich bin nicht verpflichtet und nicht bereit, an
+          Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+          teilzunehmen.
+        </p>
+      </Section>
 
-          {/* Haftung für Inhalte */}
-          <div>
-            <h2 className="font-serif text-2xl text-warm-800 mb-4">
-              Haftung für Inhalte
-            </h2>
-            <p>
-              Wir entwickeln die Inhalte dieser Webseite ständig weiter und
-              bemühen uns, korrekte und aktuelle Informationen bereitzustellen.
-              Leider können wir für die Korrektheit aller Inhalte auf dieser
-              Website keine Haftung übernehmen. Sollten Ihnen problematische
-              oder rechtswidrige Inhalte auffallen, bitten wir Sie, uns
-              umgehend zu kontaktieren.
-            </p>
-          </div>
+      <Section title="Haftung für Inhalte">
+        <p>
+          Ich entwickle die Inhalte dieser Webseite ständig weiter und bemühe
+          mich, korrekte und aktuelle Informationen bereitzustellen. Für die
+          Korrektheit aller Inhalte auf dieser Website kann ich dennoch keine
+          Haftung übernehmen. Sollten Ihnen problematische oder rechtswidrige
+          Inhalte auffallen, bitte ich Sie, mich umgehend zu kontaktieren.
+        </p>
+      </Section>
 
-          {/* Haftung für Links */}
-          <div>
-            <h2 className="font-serif text-2xl text-warm-800 mb-4">
-              Haftung für Links
-            </h2>
-            <p>
-              Unsere Webseite enthält Links zu anderen Webseiten, für deren
-              Inhalt wir nicht verantwortlich sind. Eine Haftung für verlinkte
-              Websites besteht gemäß § 17 ECG nicht, da wir keine Kenntnis
-              rechtswidriger Tätigkeiten hatten und haben.
-            </p>
-          </div>
+      <Section title="Haftung für Links">
+        <p>
+          Meine Webseite enthält Links zu anderen Webseiten, für deren Inhalt
+          ich nicht verantwortlich bin. Eine Haftung für verlinkte Websites
+          besteht gemäß § 17 ECG nicht, da ich keine Kenntnis rechtswidriger
+          Tätigkeiten hatte und habe.
+        </p>
+      </Section>
 
-          {/* Urheberrecht */}
-          <div>
-            <h2 className="font-serif text-2xl text-warm-800 mb-4">
-              Urheberrecht
-            </h2>
-            <p>
-              Alle Inhalte dieser Webseite (Bilder, Fotos, Texte) unterliegen
-              dem Urheberrecht.
-            </p>
-            <p className="mt-2">
-              Bildrechte: Petra Leimhofer, Heide Kinzelhofer, Bernadette Al
-              Achour.
-            </p>
-          </div>
+      <Section title="Urheberrecht">
+        <p>
+          Alle Inhalte dieser Webseite (Bilder, Fotos, Texte) unterliegen dem
+          Urheberrecht. Bildrechte: Petra Leimhofer, Heide Kinzelhofer,
+          Bernadette Al Achour.
+        </p>
+      </Section>
 
-          {/* Datenschutz */}
-          <div>
-            <h2 className="font-serif text-2xl text-warm-800 mb-4">
-              Datenschutzerklärung
-            </h2>
-            <p>
-              Beim Besuch unserer Website werden automatisch bestimmte Daten
-              von Ihrem Gerät gespeichert, darunter die aufgerufene URL,
-              Browser und Betriebssystem, IP-Adresse sowie Datum und Uhrzeit
-              des Zugriffs. Server-Logfiles werden zwei Wochen gespeichert und
-              danach automatisch gelöscht.
-            </p>
-            <p className="mt-4">
-              Gemäß der DSGVO haben Sie das Recht auf Auskunft, Berichtigung,
-              Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
-              und Widerspruch. Wenn Sie glauben, dass die Verarbeitung Ihrer
-              Daten gegen das Datenschutzrecht verstößt, können Sie sich bei
-              der Datenschutzbehörde beschweren.
-            </p>
-            <p className="mt-4">
-              Diese Website nutzt eine TLS-Verschlüsselung (HTTPS) zum Schutz
-              Ihrer Daten.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <Section title="Datenschutz">
+        <p>
+          Informationen zum Umgang mit Ihren Daten finden Sie in der{" "}
+          <Link
+            href="/datenschutz"
+            className="text-pen underline-offset-4 hover:underline"
+          >
+            Datenschutzerklärung
+          </Link>
+          .
+        </p>
+      </Section>
+    </article>
   );
 }

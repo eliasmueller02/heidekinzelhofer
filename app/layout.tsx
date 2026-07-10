@@ -1,17 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { EB_Garamond, Cormorant_Garamond, Caveat } from "next/font/google";
 import "./globals.css";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import SiteFrame from "./components/SiteFrame";
 
-const inter = Inter({
-  variable: "--font-inter",
+const eb = EB_Garamond({
+  variable: "--font-eb",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -26,11 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-screen flex flex-col bg-warm-50 text-warm-900 font-sans">
-        <Navigation />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html
+      lang="de"
+      className={`${eb.variable} ${cormorant.variable} ${caveat.variable}`}
+    >
+      <body className="bg-paper font-serif text-ink antialiased">
+        <SiteFrame>{children}</SiteFrame>
       </body>
     </html>
   );

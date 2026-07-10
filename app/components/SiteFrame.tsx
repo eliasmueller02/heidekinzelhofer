@@ -1,0 +1,95 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const nav = [
+  { href: "/", label: "Yoga" },
+  { href: "/kindertanz", label: "Kindertanz" },
+  { href: "/ueber-mich", label: "Über mich" },
+  { href: "/termine", label: "Termine" },
+  { href: "/kontakt", label: "Kontakt" },
+];
+
+export default function SiteFrame({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const pathname = usePathname();
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+  return (
+    <div className="relative min-h-screen">
+      {/* Vertikaler Impressum-Steg am rechten Rand (Desktop) */}
+      <Link
+        href="/impressum"
+        className="fixed right-2 top-1/2 hidden -translate-y-1/2 rotate-180 text-[11px] uppercase tracking-[0.22em] text-ink-faint transition-colors [writing-mode:vertical-rl] hover:text-pen lg:block"
+      >
+        Impressum &amp; Datenschutz
+      </Link>
+
+      <div className="mx-auto max-w-4xl px-7 pb-16 pt-14 sm:pt-20">
+        {/* Kopf – konstant auf allen Seiten */}
+        <header>
+          <Link href="/" className="inline-block">
+            <h1 className="font-display text-[2.75rem] font-medium leading-none tracking-tight text-ink sm:text-6xl">
+              Yoga &amp; Kindertanz
+            </h1>
+            <p className="mt-2 font-serif text-lg tracking-wide text-ink-soft">
+              Heide Kinzelhofer
+            </p>
+          </Link>
+        </header>
+
+        {/* Trennlinie */}
+        <div className="mb-9 mt-9 h-px w-28 bg-rule" />
+
+        {/* Navigation + Inhalt */}
+        <div className="md:flex md:gap-14">
+          <nav className="mb-10 shrink-0 md:mb-0 md:w-40">
+            <ul className="space-y-2 font-serif text-[15px] leading-relaxed">
+              {nav.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={isActive(item.href) ? "page" : undefined}
+                    className={
+                      isActive(item.href)
+                        ? "text-pen underline decoration-pen/50 underline-offset-4"
+                        : "text-ink-soft transition-colors hover:text-pen"
+                    }
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="min-w-0 flex-1">{children}</div>
+        </div>
+
+        {/* Schlanke Fußzeile */}
+        <footer className="mt-24 border-t border-rule pt-6 text-[13px] text-ink-faint md:pl-[13.5rem]">
+          <p>
+            Heide Kinzelhofer, 1220 Wien &ndash; Telefon{" "}
+            <a href="tel:+4369911445712" className="hover:text-pen">
+              0699 11 44 57 12
+            </a>
+          </p>
+          <p className="mt-1.5">
+            <Link href="/impressum" className="hover:text-pen">
+              Impressum
+            </Link>{" "}
+            und{" "}
+            <Link href="/datenschutz" className="hover:text-pen">
+              Datenschutzerklärung
+            </Link>
+          </p>
+        </footer>
+      </div>
+    </div>
+  );
+}
