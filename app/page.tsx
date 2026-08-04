@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   PageTitle,
@@ -70,6 +71,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Bewegung am Wasser – Abendlicht-Serie */}
+      <div className="mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
+        <Image
+          src="/yoga/yoga-7689.jpg"
+          alt="Heide tanzt in der Abendsonne am Wasser, die Arme weit nach oben geöffnet"
+          width={933}
+          height={1400}
+          sizes="(max-width: 640px) 100vw, 224px"
+          className="h-auto w-full"
+        />
+        <Image
+          src="/yoga/yoga-7722.jpg"
+          alt="Heide von hinten, die Arme erhoben, ein Bein angewinkelt – am Schilfufer"
+          width={933}
+          height={1400}
+          sizes="(max-width: 640px) 100vw, 224px"
+          className="h-auto w-full"
+        />
+        <Image
+          src="/yoga/yoga-7756.jpg"
+          alt="Heide im Profil, die Arme über den Kopf gestreckt, im letzten Abendlicht"
+          width={933}
+          height={1400}
+          sizes="(max-width: 640px) 100vw, 224px"
+          className="h-auto w-full"
+        />
+        <Image
+          src="/yoga/yoga-7713.jpg"
+          alt="Heide bewegt sich lächelnd am Ufer, ein Arm weit nach vorn gestreckt"
+          width={1400}
+          height={933}
+          sizes="(max-width: 640px) 100vw, 672px"
+          className="h-auto w-full sm:col-span-3"
+        />
+      </div>
+
       <section className="mt-16">
         <Heading>Aufbau einer Yogaklasse</Heading>
         <div className="mt-5">
@@ -94,18 +131,46 @@ export default function Home() {
         className="mt-16 max-w-2xl"
       />
 
-      <section className="mt-16 max-w-md">
-        <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">
-          Der Einstieg ist jederzeit möglich. Es sind keine Grundkenntnisse
-          erforderlich &ndash; es gibt Abstufungen innerhalb der Klassen. Die{" "}
-          <Link
-            href="/termine"
-            className="text-pen underline-offset-4 hover:underline"
-          >
-            Kurszeiten
-          </Link>{" "}
-          finden Sie unter Termine.
-        </p>
+      {/* Asanapraxis im Garten */}
+      <div className="mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2">
+        <Image
+          src="/yoga/yoga-7866.jpg"
+          alt="Kamel-Pose (Ustrasana): Rückbeuge im Kniestand auf der roten Matte im Garten"
+          width={1400}
+          height={933}
+          sizes="(max-width: 640px) 100vw, 336px"
+          className="h-auto w-full"
+        />
+        <Image
+          src="/yoga/yoga-7874.jpg"
+          alt="Tiefe seitliche Dehnung mit geöffnetem Brustkorb auf der Matte, dahinter Pfingstrosen"
+          width={1400}
+          height={933}
+          sizes="(max-width: 640px) 100vw, 336px"
+          className="h-auto w-full"
+        />
+      </div>
+
+      <section className="mt-16 max-w-2xl lg:flex lg:items-start lg:gap-12">
+        <div className="min-w-0 flex-1">
+          <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">
+            Der Einstieg ist jederzeit möglich. Es sind keine Grundkenntnisse
+            erforderlich &ndash; es gibt Abstufungen innerhalb der Klassen. Die{" "}
+            <Link
+              href="/termine"
+              className="text-pen underline-offset-4 hover:underline"
+            >
+              Kurszeiten
+            </Link>{" "}
+            finden Sie unter Termine.
+          </p>
+        </div>
+        <Figure
+          src="/yoga/yoga-7882.jpg"
+          alt="Kopfstand (Shirshasana) vor einer Wand aus wildem Wein"
+          ratio="aspect-[2/3]"
+          className="mt-10 max-w-[15rem] shrink-0 lg:mt-0"
+        />
       </section>
     </article>
   );
