@@ -21,6 +21,14 @@ export default function SiteFrame({
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  /* Federstrich-Effekt: Unterstreichung zeichnet sich von links nach
+     rechts, der Menüpunkt rückt dabei minimal nach rechts. */
+  const linkBase =
+    "relative inline-block transition-[color,transform] duration-300 ease-out " +
+    "after:absolute after:-bottom-[3px] after:left-0 after:h-px after:w-full " +
+    "after:origin-left after:bg-pen/60 after:transition-transform " +
+    "after:duration-300 after:ease-out";
+
   return (
     <div className="relative min-h-screen">
       {/* Vertikaler Impressum-Steg am rechten Rand (Desktop) */}
@@ -58,8 +66,8 @@ export default function SiteFrame({
                     aria-current={isActive(item.href) ? "page" : undefined}
                     className={
                       isActive(item.href)
-                        ? "text-pen underline decoration-pen/50 underline-offset-4"
-                        : "text-ink-soft transition-colors hover:text-pen"
+                        ? `${linkBase} text-pen after:scale-x-100`
+                        : `${linkBase} text-ink-soft hover:translate-x-[3px] hover:text-pen after:scale-x-0 hover:after:scale-x-100`
                     }
                   >
                     {item.label}
