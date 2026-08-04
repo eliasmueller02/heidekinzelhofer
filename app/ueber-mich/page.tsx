@@ -33,8 +33,9 @@ export default function UeberMich() {
         </div>
 
         <Figure
-          src="/HeideKinzelhofer02.jpg"
-          alt="Porträt von Heide Kinzelhofer"
+          src="/UeberMich01.jpg"
+          alt="Heide streckt lachend ein Bein zur Kamera – barfuß im hohen Gras, in der Abendsonne"
+          ratio="aspect-[2/3]"
           priority
         />
       </div>

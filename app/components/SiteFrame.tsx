@@ -7,6 +7,7 @@ const nav = [
   { href: "/", label: "Yoga" },
   { href: "/kindertanz", label: "Kindertanz" },
   { href: "/ueber-mich", label: "Über mich" },
+  { href: "/bilder", label: "Bilder" },
   { href: "/termine", label: "Termine" },
   { href: "/kontakt", label: "Kontakt" },
 ];

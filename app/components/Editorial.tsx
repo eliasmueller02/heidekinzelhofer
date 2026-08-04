@@ -43,15 +43,17 @@ export function Figure({
   caption,
   ratio = "aspect-[4/5]",
   priority = false,
+  className = "mt-10 max-w-[16rem] shrink-0 lg:mt-1",
 }: {
   src: string;
   alt: string;
   caption?: string;
   ratio?: string;
   priority?: boolean;
+  className?: string;
 }) {
   return (
-    <figure className="mt-10 w-full max-w-[16rem] shrink-0 lg:mt-1">
+    <figure className={`w-full ${className}`}>
       <div className={`relative ${ratio} overflow-hidden bg-rule/40`}>
         <Image
           src={src}
