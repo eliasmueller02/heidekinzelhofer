@@ -62,6 +62,21 @@ export default function Termine() {
         </div>
       </section>
 
+      <section className="mt-14">
+        <Heading>Kindertanz-Kurse</Heading>
+        <div className="mt-5">
+          <Prose>
+            <p>
+              Montag, 15:50&ndash;16:30 Uhr &ndash; Die Kleinen TänzerInnen
+              (4&ndash;5 Jahre)
+              <br />
+              Montag, 16:45&ndash;17:35 Uhr &ndash; Die Großen TänzerInnen
+              (6&ndash;10 Jahre)
+            </p>
+          </Prose>
+        </div>
+      </section>
+
       <Sketch
         src="/skizzen/uebungsfolge-2.png"
         alt="Handgezeichnete Skizze einer Yoga-Übungsfolge: Aufrichten, Vierfüßlerstand, Kniestand und Stand"

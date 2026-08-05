@@ -10,7 +10,7 @@ import {
 export const metadata = {
   title: "Über mich | Heide Kinzelhofer",
   description:
-    "Erfahren Sie mehr über Heide Kinzelhofer - Yoga-Lehrerin und Tanzpädagogin in Wien.",
+    "Erfahren Sie mehr über Heide Kinzelhofer - Yogalehrerin, Tänzerin und Craniosacraltherapeutin in Wien.",
 };
 
 export default function UeberMich() {
@@ -20,13 +20,23 @@ export default function UeberMich() {
 
       <div className="mt-8 lg:flex lg:items-start lg:gap-12">
         <div className="min-w-0 flex-1">
-          <Lead>Naturliebhaberin, Tänzerin, Yogalehrerin.</Lead>
+          <Lead>Yogalehrerin, Tänzerin, Craniosacraltherapeutin.</Lead>
           <div className="mt-7">
             <Prose>
               <p>
-                Geboren 1971 in Steyr, verheiratet, Mutter von Paula und Lenz.
-                Seit über zwanzig Jahren begleiten mich Tanz und Yoga &ndash;
-                als Übende, als Tänzerin und als Lehrende.
+                Geboren 1971 in Steyr. Gemeinsam mit meinem Mann erfreuen wir
+                uns an unserer Tochter Paula und unserem Sohn Lenz.
+              </p>
+              <p>
+                Ich hatte immer den Wunsch, Tänzerin zu werden, und im Laufe
+                meiner Ausbildungen und meinem Beruf als Tänzerin wurde mir die
+                Verbindung von tiefer Ruhe und bewusster Bewegung immer
+                wichtiger. Dieses Interesse führte mich in die reiche Welt des
+                Yoga.
+              </p>
+              <p>
+                Seit über 30 Jahren begleiten mich Tanz und Yoga &ndash; als
+                Übende, als Tänzerin und als Lehrende.
               </p>
             </Prose>
           </div>
@@ -41,19 +51,23 @@ export default function UeberMich() {
       </div>
 
       <section className="mt-14">
-        <Heading>Ausbildung</Heading>
+        <Heading>Bildung</Heading>
         <div className="mt-5">
           <Prose>
             <p>
               Ich habe Psychologie an der Universität Wien und Tanzpädagogik am
               Konservatorium Wien studiert. In New York lernte ich die Release
-              Technique kennen, Weiterbildungen führten mich ans Tanzquartier
-              Wien und nach München.
+              Technique und die Susan Klein Technique kennen, zahlreiche
+              Weiterbildungen führten mich ans Tanzquartier Wien und nach
+              München.
             </p>
             <p>
-              Yoga übe ich seit über zwanzig Jahren &ndash; gelernt habe ich
-              bei Trainerinnen und Trainern aus New York, Thailand und
-              Österreich.
+              Folgende LehrerInnen waren in meiner Ausbildung wichtig: unter
+              anderem Mia Lawrence (Kundalini Yoga, New York), Paul Dallaghan
+              (Ashtanga Yoga), Richard Freeman, David Swenson, Sri Louise,
+              Hannes Hochmeister (Iyengar Yoga), Eberhard Bärr (Meditation),
+              Florian Palzinsky (Meditation), Sriram (Yogatherapie) und Horst
+              Rinnersberger (Pranayama).
             </p>
           </Prose>
         </div>
@@ -69,9 +83,9 @@ export default function UeberMich() {
               Länder und nach New York.
             </p>
             <p>
-              Ich unterrichte im Yogahome 22 in Wien, am Tanzquartier Wien, an
-              verschiedenen Schulen sowie an den Pädagogischen Hochschulen Wien
-              und Baden.
+              Ich unterrichte regelmäßig im Yogahome 22. Ich bin Gastdozentin
+              im Tanzquartier Wien und bei den Roten Nasen Clowndoctors sowie
+              Lehrbeauftragte an den Pädagogischen Hochschulen Wien und Baden.
             </p>
             <p className="italic">
               Ich bin Mitglied der Berufsvereinigung für Zeitgenössische

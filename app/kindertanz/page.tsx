@@ -5,7 +5,6 @@ import {
   Lead,
   Prose,
   FigurePlaceholder,
-  Sketch,
 } from "../components/Editorial";
 
 export const metadata = {
@@ -34,17 +33,14 @@ export default function Kindertanz() {
           </div>
         </div>
 
-        <Sketch
-          src="/skizzen/kindertanz.png"
-          alt="Handgezeichnete Skizze: eine Figur mit Krone tanzt mit zwei Fabelwesen"
-          width={665}
-          height={702}
-          className="mt-10 max-w-[14rem] shrink-0 lg:mt-1"
+        <FigurePlaceholder
+          ratio="aspect-[4/5]"
+          className="mt-10 max-w-[16rem] shrink-0 lg:mt-1"
         />
       </div>
 
       <section className="mt-14">
-        <Heading>Die Kleinen Tänzer &middot; 4&ndash;5 Jahre</Heading>
+        <Heading>Die Kleinen TänzerInnen &middot; 4&ndash;5 Jahre</Heading>
         <div className="mt-5">
           <Prose>
             <p>
@@ -60,7 +56,7 @@ export default function Kindertanz() {
       </section>
 
       <section className="mt-12">
-        <Heading>Die Großen Tänzer &middot; 6&ndash;10 Jahre</Heading>
+        <Heading>Die Großen TänzerInnen &middot; 6&ndash;10 Jahre</Heading>
         <div className="mt-5">
           <Prose>
             <p>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const nav = [
-  { href: "/", label: "Yoga" },
+  { href: "/yoga", label: "Yoga" },
   { href: "/kindertanz", label: "Kindertanz" },
   { href: "/ueber-mich", label: "Über mich" },
   { href: "/bilder", label: "Bilder" },
@@ -57,7 +57,12 @@ export default function SiteFrame({
 
         {/* Navigation + Inhalt */}
         <div className="md:flex md:gap-14">
-          <nav className="mb-10 shrink-0 md:mb-0 md:w-40">
+          {/* Auf der Willkommensseite übernimmt die große Auflistung die Navigation */}
+          <nav
+            className={`mb-10 shrink-0 md:mb-0 md:w-40 ${
+              pathname === "/" ? "hidden md:invisible md:block" : ""
+            }`}
+          >
             <ul className="space-y-2 font-serif text-[15px] leading-relaxed">
               {nav.map((item) => (
                 <li key={item.href}>
