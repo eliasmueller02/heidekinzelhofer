@@ -45,3 +45,40 @@ body::before {
 ::selection {
   background: color-mix(in srgb, var(--color-pen) 28%, transparent);
 }
+
+/* Eintritts-Choreografie der Willkommensseite */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes rule-draw {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes wipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+.reveal {
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+.reveal-wipe {
+  animation: wipe 1.2s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+.reveal-rule::before,
+.rule-final {
+  transform-origin: left;
+  animation: rule-draw 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-wipe,
+  .reveal-rule::before,
+  .rule-final {
+    animation: none;
+  }
+}
