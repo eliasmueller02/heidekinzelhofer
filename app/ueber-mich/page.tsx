@@ -84,7 +84,8 @@ export default function UeberMich() {
               Europa und nach New York.
             </p>
             <p>
-              Ich unterrichte regelmäßig im Yogahome 22. Ich war Gastdozentin
+              Ich unterrichte regelmäßig im Yogahome 22 in Wien. Ich war
+              Gastdozentin
               im Tanzquartier Wien und bei den Roten Nasen Clowndoctors.
               Aktuell bin ich Lehrbeauftragte an den Pädagogischen Hochschulen
               Wien und Baden.

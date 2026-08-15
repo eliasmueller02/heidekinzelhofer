@@ -4,7 +4,7 @@ import {
   Heading,
   Lead,
   Prose,
-  FigurePlaceholder,
+  Figure,
 } from "../components/Editorial";
 
 export const metadata = {
@@ -33,9 +33,11 @@ export default function Kindertanz() {
           </div>
         </div>
 
-        <FigurePlaceholder
-          ratio="aspect-[4/5]"
-          className="mt-10 max-w-[16rem] shrink-0 lg:mt-1"
+        <Figure
+          src="/kindertanz-goldvorhang.jpg"
+          alt="Drei Mädchen tanzen barfuß im Tanzsaal vor einem goldenen Vorhang"
+          ratio="aspect-[2/3]"
+          priority
         />
       </div>
 
@@ -71,8 +73,6 @@ export default function Kindertanz() {
           </Prose>
         </div>
       </section>
-
-      <FigurePlaceholder className="mt-16 max-w-md" />
 
       <section className="mt-16 max-w-md">
         <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">
