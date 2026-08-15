@@ -4,6 +4,7 @@ import {
   Lead,
   Prose,
   Figure,
+  Sketch,
 } from "../components/Editorial";
 
 export const metadata = {
@@ -40,6 +41,14 @@ export default function Kindertanz() {
         />
       </div>
 
+      <Sketch
+        src="/skizzen/tanz-1.png"
+        alt="Gezeichnete tanzende Kinder in gelbem und rotem Kleid, daneben eine springende Figur in Violett"
+        width={880}
+        height={505}
+        className="mt-14 max-w-xl"
+      />
+
       <section className="mt-14">
         <Heading>Die Kleinen TänzerInnen &middot; 4&ndash;5 Jahre</Heading>
         <div className="mt-5">
@@ -72,6 +81,15 @@ export default function Kindertanz() {
           </Prose>
         </div>
       </section>
+
+      <Sketch
+        src="/skizzen/tanz-2.png"
+        alt="Gezeichnete Kinder in Bewegung: eine Figur am Boden in Rot, eine tanzende Figur in Blau mit gelbem Hut"
+        width={850}
+        height={445}
+        caption="Aus meinem Skizzenbuch"
+        className="mt-14 max-w-xl"
+      />
 
       <section className="mt-16 max-w-md">
         <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">
