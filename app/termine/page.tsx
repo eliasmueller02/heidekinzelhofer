@@ -1,11 +1,5 @@
 import Link from "next/link";
-import {
-  PageTitle,
-  Heading,
-  Lead,
-  Prose,
-  Sketch,
-} from "../components/Editorial";
+import { PageTitle, Heading, Lead, Prose } from "../components/Editorial";
 
 export const metadata = {
   title: "Termine & Kurszeiten | Heide Kinzelhofer",
@@ -76,14 +70,6 @@ export default function Termine() {
           </Prose>
         </div>
       </section>
-
-      <Sketch
-        src="/skizzen/uebungsfolge-2.png"
-        alt="Handgezeichnete Skizze einer Yoga-Übungsfolge: Aufrichten, Vierfüßlerstand, Kniestand und Stand"
-        width={1800}
-        height={382}
-        className="mt-14 max-w-2xl"
-      />
 
       <section className="mt-14 max-w-md">
         <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">

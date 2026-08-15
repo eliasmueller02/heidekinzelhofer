@@ -58,10 +58,11 @@ export default function Yoga() {
         </div>
 
         <Figure
-          src="/yoga/yoga-hero.jpg"
-          alt="Heide tanzt in der Abendsonne am Wasser, die Arme weit nach oben geöffnet"
-          ratio="aspect-[2/3]"
+          src="/yoga/yoga-7874.jpg"
+          alt="Tiefe seitliche Dehnung im weiten Schritt auf der roten Matte im Garten, der Blick nach oben"
+          ratio="aspect-[3/2]"
           priority
+          className="mt-10 max-w-[18rem] shrink-0 lg:mt-1"
         />
       </div>
 
@@ -79,39 +80,12 @@ export default function Yoga() {
             <p>
               Durch die tiefe Ruhe, die im eigenen Selbst wieder spürbar wird,
               ist es möglich, gelassen und zuversichtlich den Herausforderungen
-              des Lebens zu begegnen. Ist das nicht gut?
+              des Lebens zu begegnen und in Harmonie mit sich und der Welt zu
+              sein. Ist das nicht gut?
             </p>
           </Prose>
         </div>
       </section>
-
-      {/* Bewegung am Wasser – Abendlicht-Serie */}
-      <div className="mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2">
-        <Image
-          src="/yoga/yoga-7722.jpg"
-          alt="Heide von hinten, die Arme erhoben, ein Bein angewinkelt – am Schilfufer"
-          width={933}
-          height={1400}
-          sizes="(max-width: 640px) 100vw, 336px"
-          className="h-auto w-full"
-        />
-        <Image
-          src="/yoga/yoga-7756.jpg"
-          alt="Heide im Profil, die Arme über den Kopf gestreckt, im letzten Abendlicht"
-          width={933}
-          height={1400}
-          sizes="(max-width: 640px) 100vw, 336px"
-          className="h-auto w-full"
-        />
-        <Image
-          src="/yoga/yoga-7713.jpg"
-          alt="Heide bewegt sich lächelnd am Ufer, ein Arm weit nach vorn gestreckt"
-          width={1400}
-          height={933}
-          sizes="(max-width: 640px) 100vw, 672px"
-          className="h-auto w-full sm:col-span-2"
-        />
-      </div>
 
       <section className="mt-16">
         <Heading>Aufbau einer Yogaklasse</Heading>
@@ -119,19 +93,35 @@ export default function Yoga() {
           <Prose>
             <p>
               Meine Yogaklassen sind oft lustig, abwechslungsreich und spannen
-              einen guten Bogen: Asanas &ndash; Körperübungen, Pranayama
-              &ndash; Atemübungen, Meditation und Mantrasingen zum Abschluss.
+              einen guten Bogen:
+            </p>
+            <p>
+              Asanas &ndash; Körperübungen
+              <br />
+              Pranayama &ndash; Atemübungen
+              <br />
+              Meditation
+              <br />
+              Mantrasingen zum Abschluss
             </p>
           </Prose>
         </div>
       </section>
 
+      {/* Aus dem Skizzenbuch: beide Zeilen der Übungsfolge, die Krone als Schluss */}
       <Sketch
         src="/skizzen/uebungsfolge-1.png"
         alt="Handgezeichnete Skizze einer Yoga-Übungsfolge: vom Stehen über Vorbeuge und Stütz bis zum herabschauenden Hund"
         width={1800}
         height={315}
         className="mt-16 max-w-2xl"
+      />
+      <Sketch
+        src="/skizzen/uebungsfolge-2.png"
+        alt="Fortsetzung der Übungsfolge: Aufrichten, Vierfüßlerstand, Kniestand und Stand"
+        width={1800}
+        height={382}
+        className="mt-6 max-w-2xl"
       />
       <Sketch
         src="/skizzen/kindertanz.png"
@@ -157,8 +147,9 @@ export default function Yoga() {
       <section className="mt-16 max-w-2xl lg:flex lg:items-start lg:gap-12">
         <div className="min-w-0 flex-1">
           <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">
-            Der Einstieg ist jederzeit möglich. Es sind keine Grundkenntnisse
-            erforderlich &ndash; es gibt Abstufungen innerhalb der Klassen. Die{" "}
+            Der Einstieg ist jederzeit möglich. Alle Körper sind willkommen. Es
+            sind keine Grundkenntnisse erforderlich &ndash; es gibt Abstufungen
+            innerhalb der Klassen. Die{" "}
             <Link
               href="/termine"
               className="text-pen underline-offset-4 hover:underline"
