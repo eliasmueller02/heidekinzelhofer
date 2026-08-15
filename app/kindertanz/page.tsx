@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  PageTitle,
   Heading,
   Lead,
   Prose,
@@ -16,7 +15,7 @@ export const metadata = {
 export default function Kindertanz() {
   return (
     <article>
-      <PageTitle>Kreativer Kindertanz</PageTitle>
+      <h1 className="sr-only">Kreativer Kindertanz</h1>
 
       <div className="mt-8 lg:flex lg:items-start lg:gap-12">
         <div className="min-w-0 flex-1">

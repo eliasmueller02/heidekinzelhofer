@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  PageTitle,
   Heading,
   Lead,
   Prose,
@@ -18,10 +17,10 @@ export const metadata = {
 export default function Yoga() {
   return (
     <article>
-      <PageTitle>Hatha-Yoga</PageTitle>
+      <h1 className="sr-only">Hatha-Yoga</h1>
 
-      <div className="mt-8 lg:flex lg:items-start lg:gap-12">
-        <div className="min-w-0 flex-1">
+      <div className="mt-8">
+        <div className="min-w-0">
           <Lead>
             Yoga ist eine tiefgreifende Technik, die, regelmäßig und über die
             Zeit praktiziert, Heilung in Körper, Geist und Seele bewirkt.
@@ -57,12 +56,17 @@ export default function Yoga() {
           </div>
         </div>
 
-        <Figure
+      </div>
+
+      <div className="mt-12 max-w-2xl">
+        <Image
           src="/yoga/yoga-7874.jpg"
           alt="Tiefe seitliche Dehnung im weiten Schritt auf der roten Matte im Garten, der Blick nach oben"
-          ratio="aspect-[3/2]"
+          width={1400}
+          height={933}
           priority
-          className="mt-10 max-w-[18rem] shrink-0 lg:mt-1"
+          sizes="(max-width: 640px) 100vw, 672px"
+          className="h-auto w-full"
         />
       </div>
 

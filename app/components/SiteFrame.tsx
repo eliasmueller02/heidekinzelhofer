@@ -4,8 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const nav = [
-  { href: "/yoga", label: "Yoga" },
-  { href: "/kindertanz", label: "Kindertanz" },
+  { href: "/yoga", label: "Hatha-Yoga" },
+  { href: "/kindertanz", label: "Kreativer Kindertanz" },
   { href: "/ueber-mich", label: "Über mich" },
   { href: "/bilder", label: "Bilder" },
   { href: "/termine", label: "Termine" },
@@ -59,7 +59,7 @@ export default function SiteFrame({
         <div className="md:flex md:gap-14">
           {/* Auf der Willkommensseite übernimmt die große Auflistung die Navigation */}
           <nav
-            className={`mb-10 shrink-0 md:mb-0 md:w-40 ${
+            className={`mb-10 shrink-0 md:mb-0 md:w-48 ${
               pathname === "/" ? "hidden md:invisible md:block" : ""
             }`}
           >
@@ -86,7 +86,7 @@ export default function SiteFrame({
         </div>
 
         {/* Schlanke Fußzeile */}
-        <footer className="mt-24 border-t border-rule pt-6 text-[13px] text-ink-faint md:pl-[13.5rem]">
+        <footer className="mt-24 border-t border-rule pt-6 text-[13px] text-ink-faint md:pl-[15.5rem]">
           <p>
             Heide Kinzelhofer, 1220 Wien &ndash; Telefon{" "}
             <a href="tel:+4369911445712" className="hover:text-pen">

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import {
-  PageTitle,
   Heading,
   Lead,
   Prose,
@@ -16,7 +15,7 @@ export const metadata = {
 export default function UeberMich() {
   return (
     <article>
-      <PageTitle>Über mich</PageTitle>
+      <h1 className="sr-only">Über mich</h1>
 
       <div className="mt-8 lg:flex lg:items-start lg:gap-12">
         <div className="min-w-0 flex-1">
@@ -48,6 +47,41 @@ export default function UeberMich() {
           ratio="aspect-[2/3]"
           priority
         />
+      </div>
+
+      {/* Tanz am Wasser – vier gleich große Bilder über die ganze Seite */}
+      <div className="mt-14 grid grid-cols-2 gap-4 md:-ml-[15.5rem] md:grid-cols-4 md:gap-6">
+        {[
+          {
+            src: "/yoga/yoga-hero.jpg",
+            alt: "Heide tanzt in der Abendsonne am Wasser, die Arme weit nach oben geöffnet",
+          },
+          {
+            src: "/yoga/yoga-7722.jpg",
+            alt: "Heide von hinten, die Arme erhoben, ein Bein angewinkelt – am Schilfufer",
+          },
+          {
+            src: "/yoga/yoga-7756.jpg",
+            alt: "Heide im Profil, die Arme über den Kopf gestreckt, im letzten Abendlicht",
+          },
+          {
+            src: "/yoga/yoga-7713.jpg",
+            alt: "Heide bewegt sich lächelnd am Ufer, ein Arm weit nach vorn gestreckt",
+          },
+        ].map((bild) => (
+          <div
+            key={bild.src}
+            className="relative aspect-[3/4] overflow-hidden bg-rule/40"
+          >
+            <Image
+              src={bild.src}
+              alt={bild.alt}
+              fill
+              sizes="(max-width: 768px) 50vw, 220px"
+              className="object-cover"
+            />
+          </div>
+        ))}
       </div>
 
       <section className="mt-14">
@@ -98,41 +132,6 @@ export default function UeberMich() {
         </div>
       </section>
 
-      {/* Tanz am Wasser – Abendlicht-Serie */}
-      <div className="mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
-        <Image
-          src="/yoga/yoga-hero.jpg"
-          alt="Heide tanzt in der Abendsonne am Wasser, die Arme weit nach oben geöffnet"
-          width={933}
-          height={1400}
-          sizes="(max-width: 640px) 100vw, 224px"
-          className="h-auto w-full"
-        />
-        <Image
-          src="/yoga/yoga-7722.jpg"
-          alt="Heide von hinten, die Arme erhoben, ein Bein angewinkelt – am Schilfufer"
-          width={933}
-          height={1400}
-          sizes="(max-width: 640px) 100vw, 224px"
-          className="h-auto w-full"
-        />
-        <Image
-          src="/yoga/yoga-7756.jpg"
-          alt="Heide im Profil, die Arme über den Kopf gestreckt, im letzten Abendlicht"
-          width={933}
-          height={1400}
-          sizes="(max-width: 640px) 100vw, 224px"
-          className="h-auto w-full"
-        />
-        <Image
-          src="/yoga/yoga-7713.jpg"
-          alt="Heide bewegt sich lächelnd am Ufer, ein Arm weit nach vorn gestreckt"
-          width={1400}
-          height={933}
-          sizes="(max-width: 640px) 100vw, 672px"
-          className="h-auto w-full sm:col-span-3"
-        />
-      </div>
     </article>
   );
 }

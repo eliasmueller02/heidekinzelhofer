@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { PageTitle } from "../components/Editorial";
 
 export const metadata = {
   title: "Bilder | Heide Kinzelhofer",
@@ -26,7 +25,7 @@ const bilder = [
 export default function Bilder() {
   return (
     <article>
-      <PageTitle>Bilderstrecke</PageTitle>
+      <h1 className="sr-only">Bilderstrecke</h1>
 
       <div className="mt-10 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2">
         {bilder.map((bild) => (

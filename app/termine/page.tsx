@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PageTitle, Heading, Lead, Prose } from "../components/Editorial";
+import { Heading, Lead, Prose } from "../components/Editorial";
 
 export const metadata = {
   title: "Termine & Kurszeiten | Heide Kinzelhofer",
@@ -13,7 +13,7 @@ const MAPS_URL =
 export default function Termine() {
   return (
     <article>
-      <PageTitle>Termine &amp; Kurszeiten</PageTitle>
+      <h1 className="sr-only">Termine & Kurszeiten</h1>
 
       <div className="mt-8">
         <Lead>Der Einstieg ist jederzeit möglich.</Lead>

@@ -16,9 +16,9 @@ const delay = (ms: number) =>
 
 export default function Willkommen() {
   return (
-    <article className="md:-ml-[13.5rem]">
+    <article className="md:-ml-[15.5rem]">
       <p
-        className="reveal font-serif text-[11px] uppercase tracking-[0.28em] text-ink-faint md:ml-[13.5rem]"
+        className="reveal font-serif text-[11px] uppercase tracking-[0.28em] text-ink-faint md:ml-[15.5rem]"
         style={delay(0)}
       >
         Inhalt
@@ -33,7 +33,7 @@ export default function Willkommen() {
                 <Link
                   href={seite.href}
                   style={delay(120 + i * 90)}
-                  className="reveal reveal-rule group relative block py-5 before:absolute before:inset-x-0 before:top-0 before:h-px before:origin-left before:bg-rule/70 after:absolute after:inset-x-0 after:top-0 after:h-px after:origin-left after:scale-x-0 after:bg-pen/70 after:transition-transform after:duration-500 after:ease-out hover:after:scale-x-100 focus-visible:outline-none focus-visible:after:scale-x-100 md:ml-[13.5rem] md:py-[1.375rem]"
+                  className="reveal reveal-rule group relative block py-5 before:absolute before:inset-x-0 before:top-0 before:h-px before:origin-left before:bg-rule/70 after:absolute after:inset-x-0 after:top-0 after:h-px after:origin-left after:scale-x-0 after:bg-pen/70 after:transition-transform after:duration-500 after:ease-out hover:after:scale-x-100 focus-visible:outline-none focus-visible:after:scale-x-100 md:ml-[15.5rem] md:py-[1.375rem]"
                 >
                   <span className="-ml-[0.03em] block font-display text-[clamp(2.5rem,6vw,3.5rem)] font-medium leading-[0.95] tracking-tight text-ink transition-[color,transform] duration-[400ms] ease-out group-hover:translate-x-[6px] group-hover:text-pen group-focus-visible:translate-x-[6px] group-focus-visible:text-pen group-active:text-pen motion-reduce:transition-none">
                     {seite.label}
@@ -44,7 +44,7 @@ export default function Willkommen() {
           </ul>
           <div
             aria-hidden
-            className="rule-final h-px bg-rule/70 md:ml-[13.5rem]"
+            className="rule-final h-px bg-rule/70 md:ml-[15.5rem]"
             style={delay(570)}
           />
         </nav>
@@ -86,8 +86,20 @@ export default function Willkommen() {
         </aside>
       </div>
 
+      {/* Weites Schlussbild über die ganze Seite */}
+      <div className="reveal mt-16" style={delay(800)}>
+        <Image
+          src="/bilder/pfingstrosen-09.jpg"
+          alt="Heide hebt lachend beide Arme vor einer Wand aus wildem Wein"
+          width={1400}
+          height={933}
+          sizes="(max-width: 768px) 100vw, 896px"
+          className="h-auto w-full"
+        />
+      </div>
+
       {/* Schlussvignette: Skizzenfries — Desktop ruhig, mobil über den Blattrand */}
-      <div className="reveal-wipe mt-16 hidden md:ml-[13.5rem] md:block" style={delay(850)}>
+      <div className="reveal-wipe mt-16 hidden md:ml-[15.5rem] md:block" style={delay(850)}>
         <Image
           src="/skizzen/folge-1.png"
           alt=""

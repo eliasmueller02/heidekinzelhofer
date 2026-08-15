@@ -1,4 +1,4 @@
-import { PageTitle, Heading, Lead, Prose } from "../components/Editorial";
+import { Heading, Lead, Prose } from "../components/Editorial";
 import MapEmbed from "../components/MapEmbed";
 
 export const metadata = {
@@ -13,7 +13,7 @@ const MAPS_URL =
 export default function Kontakt() {
   return (
     <article>
-      <PageTitle>Kontakt</PageTitle>
+      <h1 className="sr-only">Kontakt</h1>
 
       <div className="mt-8">
         <Lead>Ich freue mich auf Ihre Nachricht.</Lead>
