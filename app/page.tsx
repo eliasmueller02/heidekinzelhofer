@@ -76,11 +76,11 @@ export default function Willkommen() {
               </p>
             </div>
             <Image
-              src="/skizzen/kindertanz.png"
+              src="/skizzen/meditation.png"
               alt=""
-              width={665}
-              height={702}
-              className="h-auto w-16 shrink-0 opacity-90"
+              width={470}
+              height={484}
+              className="h-auto w-16 shrink-0"
             />
           </div>
         </aside>
@@ -89,20 +89,20 @@ export default function Willkommen() {
       {/* Schlussvignette: Skizzenfries — Desktop ruhig, mobil über den Blattrand */}
       <div className="reveal-wipe mt-16 hidden md:ml-[13.5rem] md:block" style={delay(850)}>
         <Image
-          src="/skizzen/uebungsfolge-1.png"
+          src="/skizzen/folge-1.png"
           alt=""
-          width={1800}
-          height={315}
-          className="h-auto w-full max-w-[26rem] opacity-75"
+          width={1400}
+          height={342}
+          className="h-auto w-full max-w-[26rem]"
         />
       </div>
       <div className="reveal-wipe mt-14 overflow-hidden md:hidden" style={delay(850)}>
         <Image
-          src="/skizzen/uebungsfolge-2.png"
+          src="/skizzen/folge-2.png"
           alt=""
-          width={1800}
-          height={382}
-          className="h-auto w-[140%] max-w-none opacity-70"
+          width={1400}
+          height={418}
+          className="h-auto w-[140%] max-w-none"
         />
       </div>
     </article>

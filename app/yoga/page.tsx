@@ -110,24 +110,24 @@ export default function Yoga() {
 
       {/* Aus dem Skizzenbuch: beide Zeilen der Übungsfolge, die Krone als Schluss */}
       <Sketch
-        src="/skizzen/uebungsfolge-1.png"
+        src="/skizzen/folge-1.png"
         alt="Handgezeichnete Skizze einer Yoga-Übungsfolge: vom Stehen über Vorbeuge und Stütz bis zum herabschauenden Hund"
-        width={1800}
-        height={315}
+        width={1400}
+        height={342}
         className="mt-16 max-w-2xl"
       />
       <Sketch
-        src="/skizzen/uebungsfolge-2.png"
-        alt="Fortsetzung der Übungsfolge: Aufrichten, Vierfüßlerstand, Kniestand und Stand"
-        width={1800}
-        height={382}
+        src="/skizzen/folge-2.png"
+        alt="Fortsetzung der Übungsfolge: Vorbeuge, Stütz, Kniestand und Stand"
+        width={1400}
+        height={418}
         className="mt-6 max-w-2xl"
       />
       <Sketch
-        src="/skizzen/kindertanz.png"
-        alt="Handgezeichnete Figur mit Krone und zwei Fabelwesen – der Schluss der Skizzenbuchseite"
-        width={665}
-        height={702}
+        src="/skizzen/meditation.png"
+        alt="Gezeichnete Figur im Sitz, die Arme geöffnet – der Schluss der Übungsfolge"
+        width={470}
+        height={484}
         caption="Aus meinem Skizzenbuch: eine Übungsfolge"
         className="mt-4 max-w-[9rem]"
       />
