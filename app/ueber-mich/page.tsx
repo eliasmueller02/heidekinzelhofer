@@ -49,6 +49,32 @@ export default function UeberMich() {
         />
       </div>
 
+
+      <section className="mt-14">
+        <Heading>Bildung</Heading>
+        <div className="mt-5">
+          <Prose>
+            <p>
+              Ich habe Psychologie an der Universität Wien und Tanzpädagogik am
+              Konservatorium Wien studiert. Während meiner Zeit in New York
+              lernte ich Release Technique und Susan Klein Technique, die mir
+              angewandte anatomische Kenntnisse und Bewegungsökonomie
+              vermittelten. Zahlreiche Weiterbildungen führten mich ans
+              Tanzquartier Wien und nach München.
+            </p>
+            <p>
+              Folgende LehrerInnen waren in meiner Yogaausbildung wichtig: unter
+              anderem Mia Lawrence (Kundalini Yoga, New York), Paul Dallaghan
+              (Ashtanga Yoga), Richard Freeman, David Swenson, Sri Louise,
+              Hannes Hochmeister (Iyengar Yoga), Eberhard Bärr (Meditation),
+              Florian Palzinsky (Meditation), Sriram (Yogatherapie) und Horst
+              Rinnersberger (Pranayama).
+            </p>
+          </Prose>
+        </div>
+      </section>
+
+
       {/* Tanz am Wasser – vier gleich große Bilder über die ganze Seite */}
       <div className="mt-14 grid grid-cols-2 gap-4 md:-ml-[15.5rem] md:grid-cols-4 md:gap-6">
         {[
@@ -85,30 +111,6 @@ export default function UeberMich() {
       </div>
 
       <section className="mt-14">
-        <Heading>Bildung</Heading>
-        <div className="mt-5">
-          <Prose>
-            <p>
-              Ich habe Psychologie an der Universität Wien und Tanzpädagogik am
-              Konservatorium Wien studiert. Während meiner Zeit in New York
-              lernte ich Release Technique und Susan Klein Technique, die mir
-              angewandte anatomische Kenntnisse und Bewegungsökonomie
-              vermittelten. Zahlreiche Weiterbildungen führten mich ans
-              Tanzquartier Wien und nach München.
-            </p>
-            <p>
-              Folgende LehrerInnen waren in meiner Yogaausbildung wichtig: unter
-              anderem Mia Lawrence (Kundalini Yoga, New York), Paul Dallaghan
-              (Ashtanga Yoga), Richard Freeman, David Swenson, Sri Louise,
-              Hannes Hochmeister (Iyengar Yoga), Eberhard Bärr (Meditation),
-              Florian Palzinsky (Meditation), Sriram (Yogatherapie) und Horst
-              Rinnersberger (Pranayama).
-            </p>
-          </Prose>
-        </div>
-      </section>
-
-      <section className="mt-14">
         <Heading>Berufliches</Heading>
         <div className="mt-5">
           <Prose>
@@ -118,11 +120,10 @@ export default function UeberMich() {
               Europa und nach New York.
             </p>
             <p>
-              Ich unterrichte regelmäßig im Yogahome 22 in Wien. Ich war
-              Gastdozentin
-              im Tanzquartier Wien und bei den Roten Nasen Clowndoctors.
-              Aktuell bin ich Lehrbeauftragte an den Pädagogischen Hochschulen
-              Wien und Baden.
+              Als Yogalehrerin unterrichte ich regelmäßig im Yogahome 22 in
+              Wien. Ich war Gastdozentin im Tanzquartier Wien und bei den Roten
+              Nasen Clowndoctors. Aktuell bin ich Lehrbeauftragte an den
+              Pädagogischen Hochschulen Wien und Baden.
             </p>
             <p className="italic">
               Ich bin Mitglied der Berufsvereinigung für Zeitgenössische

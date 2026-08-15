@@ -3,10 +3,9 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 
 const seiten = [
-  { href: "/yoga", label: "Yoga" },
-  { href: "/kindertanz", label: "Kindertanz" },
+  { href: "/yoga", label: "Hatha-Yoga" },
+  { href: "/kindertanz", label: "Kreativer Kindertanz" },
   { href: "/ueber-mich", label: "Über mich" },
-  { href: "/bilder", label: "Bilder" },
   { href: "/termine", label: "Termine" },
   { href: "/kontakt", label: "Kontakt" },
 ];
@@ -17,15 +16,20 @@ const delay = (ms: number) =>
 export default function Willkommen() {
   return (
     <article className="md:-ml-[15.5rem]">
-      <p
-        className="reveal font-serif text-[11px] uppercase tracking-[0.28em] text-ink-faint md:ml-[15.5rem]"
-        style={delay(0)}
-      >
-        Inhalt
-      </p>
+      {/* Skizzenzeile direkt unter dem Titel */}
+      <div className="reveal-wipe -mt-2 max-w-sm" style={delay(0)}>
+        <Image
+          src="/skizzen/folge-1.png"
+          alt=""
+          width={1400}
+          height={342}
+          priority
+          className="h-auto w-full"
+        />
+      </div>
 
-      {/* Register links, Porträt-Tafel rechts daneben */}
-      <div className="mt-6 lg:grid lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start lg:gap-x-12">
+      {/* Register und Porträt rücken eng zusammen */}
+      <div className="mt-10 lg:grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-center lg:gap-x-10">
         <nav aria-label="Seiten">
           <ul>
             {seiten.map((seite, i) => (
@@ -33,9 +37,9 @@ export default function Willkommen() {
                 <Link
                   href={seite.href}
                   style={delay(120 + i * 90)}
-                  className="reveal reveal-rule group relative block py-5 before:absolute before:inset-x-0 before:top-0 before:h-px before:origin-left before:bg-rule/70 after:absolute after:inset-x-0 after:top-0 after:h-px after:origin-left after:scale-x-0 after:bg-pen/70 after:transition-transform after:duration-500 after:ease-out hover:after:scale-x-100 focus-visible:outline-none focus-visible:after:scale-x-100 md:ml-[15.5rem] md:py-[1.375rem]"
+                  className="reveal reveal-rule group relative block py-4 before:absolute before:inset-x-0 before:top-0 before:h-px before:origin-left before:bg-rule/70 after:absolute after:inset-x-0 after:top-0 after:h-px after:origin-left after:scale-x-0 after:bg-pen/70 after:transition-transform after:duration-500 after:ease-out hover:after:scale-x-100 focus-visible:outline-none focus-visible:after:scale-x-100 md:ml-[15.5rem] lg:ml-0 lg:py-[1.125rem]"
                 >
-                  <span className="-ml-[0.03em] block font-display text-[clamp(2.5rem,6vw,3.5rem)] font-medium leading-[0.95] tracking-tight text-ink transition-[color,transform] duration-[400ms] ease-out group-hover:translate-x-[6px] group-hover:text-pen group-focus-visible:translate-x-[6px] group-focus-visible:text-pen group-active:text-pen motion-reduce:transition-none">
+                  <span className="-ml-[0.03em] block font-display text-[clamp(1.75rem,4vw,2.5rem)] font-medium leading-[1.05] tracking-tight text-ink transition-[color,transform] duration-[400ms] ease-out group-hover:translate-x-[6px] group-hover:text-pen group-focus-visible:translate-x-[6px] group-focus-visible:text-pen group-active:text-pen motion-reduce:transition-none">
                     {seite.label}
                   </span>
                 </Link>
@@ -44,77 +48,48 @@ export default function Willkommen() {
           </ul>
           <div
             aria-hidden
-            className="rule-final h-px bg-rule/70 md:ml-[15.5rem]"
+            className="rule-final h-px bg-rule/70 md:ml-[15.5rem] lg:ml-0"
             style={delay(570)}
           />
         </nav>
 
-        {/* Tafel: Pfingstrosen-Porträt, darunter Gruß und Kindertanz-Skizze */}
+        {/* Porträt mit handschriftlichem Gruß */}
         <aside
-          className="reveal mt-14 flex flex-col gap-8 lg:sticky lg:top-10 lg:mt-0"
+          className="reveal mt-12 flex flex-col gap-6 lg:mt-0"
           style={delay(700)}
         >
-          <figure className="w-full max-w-[20rem]">
+          <figure className="w-full max-w-[22rem]">
             <div className="group relative aspect-[3/4] overflow-hidden bg-rule/40">
               <Image
                 src="/bilder/pfingstrosen-01.jpg"
                 alt="Heide Kinzelhofer lacht herzlich, umrahmt von einem Kranz aus Pfingstrosen"
                 fill
                 priority
-                sizes="(max-width: 1024px) 20rem, 20rem"
+                sizes="(max-width: 1024px) 22rem, 22rem"
                 className="object-cover transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.025] motion-reduce:transition-none"
               />
             </div>
           </figure>
-          <div className="flex items-end gap-6">
-            <div>
-              <p className="max-w-[14rem] rotate-[-1.5deg] font-hand text-[1.625rem] leading-snug text-pen md:text-[1.75rem]">
-                Schön, dass du hier bist.
-              </p>
-              <p className="mt-2 font-serif text-[15px] italic text-ink-soft">
-                &mdash; Heide
-              </p>
-            </div>
-            <Image
-              src="/skizzen/meditation.png"
-              alt=""
-              width={470}
-              height={484}
-              className="h-auto w-16 shrink-0"
-            />
+          <div>
+            <p className="max-w-[14rem] rotate-[-1.5deg] font-hand text-[1.625rem] leading-snug text-pen md:text-[1.75rem]">
+              Schön, dass du hier bist.
+            </p>
+            <p className="mt-2 font-serif text-[15px] italic text-ink-soft">
+              &mdash; Heide
+            </p>
           </div>
         </aside>
       </div>
 
-      {/* Weites Schlussbild über die ganze Seite */}
-      <div className="reveal mt-16" style={delay(800)}>
+      {/* Schlussbild */}
+      <div className="reveal mt-16 md:ml-[15.5rem]" style={delay(850)}>
         <Image
           src="/bilder/pfingstrosen-09.jpg"
           alt="Heide hebt lachend beide Arme vor einer Wand aus wildem Wein"
           width={1400}
           height={933}
-          sizes="(max-width: 768px) 100vw, 896px"
-          className="h-auto w-full"
-        />
-      </div>
-
-      {/* Schlussvignette: Skizzenfries — Desktop ruhig, mobil über den Blattrand */}
-      <div className="reveal-wipe mt-16 hidden md:ml-[15.5rem] md:block" style={delay(850)}>
-        <Image
-          src="/skizzen/folge-1.png"
-          alt=""
-          width={1400}
-          height={342}
-          className="h-auto w-full max-w-[26rem]"
-        />
-      </div>
-      <div className="reveal-wipe mt-14 overflow-hidden md:hidden" style={delay(850)}>
-        <Image
-          src="/skizzen/folge-2.png"
-          alt=""
-          width={1400}
-          height={418}
-          className="h-auto w-[140%] max-w-none"
+          sizes="(max-width: 640px) 100vw, 672px"
+          className="h-auto w-full max-w-2xl"
         />
       </div>
     </article>

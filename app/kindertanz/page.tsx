@@ -18,6 +18,14 @@ export default function Kindertanz() {
     <article>
       <h1 className="sr-only">Kreativer Kindertanz</h1>
 
+      <Sketch
+        src="/skizzen/tanz-1.png"
+        alt="Gezeichnete tanzende Kinder in gelbem und rotem Kleid, daneben eine springende Figur in Violett"
+        width={880}
+        height={505}
+        className="max-w-xl"
+      />
+
       <div className="mt-8 lg:flex lg:items-start lg:gap-12">
         <div className="min-w-0 flex-1">
           <Lead>Jede Stunde feiern wir ein Fest!</Lead>
@@ -40,14 +48,6 @@ export default function Kindertanz() {
           priority
         />
       </div>
-
-      <Sketch
-        src="/skizzen/tanz-1.png"
-        alt="Gezeichnete tanzende Kinder in gelbem und rotem Kleid, daneben eine springende Figur in Violett"
-        width={880}
-        height={505}
-        className="mt-14 max-w-xl"
-      />
 
       <section className="mt-14">
         <Heading>Die Kleinen TänzerInnen &middot; 4&ndash;5 Jahre</Heading>

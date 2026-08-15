@@ -127,14 +127,24 @@ export default function Yoga() {
         height={418}
         className="mt-6 max-w-2xl"
       />
-      <Sketch
-        src="/skizzen/meditation.png"
-        alt="Gezeichnete Figur im Sitz, die Arme geöffnet – der Schluss der Übungsfolge"
-        width={470}
-        height={484}
-        caption="Aus meinem Skizzenbuch: eine Übungsfolge"
-        className="mt-4 max-w-[9rem]"
-      />
+      <div className="mt-4 max-w-2xl sm:flex sm:items-end sm:gap-8">
+        <Sketch
+          src="/skizzen/meditation.png"
+          alt="Gezeichnete Figur im Sitz, die Arme geöffnet – der Schluss der Übungsfolge"
+          width={470}
+          height={484}
+          caption="Aus meinem Skizzenbuch: eine Übungsfolge"
+          className="max-w-[9rem] shrink-0"
+        />
+        <Image
+          src="/skizzen/zitat.png"
+          alt="Handgeschrieben: You are the sky, anything else is just the weather. (Pema Chödrön)"
+          width={1200}
+          height={168}
+          sizes="(max-width: 640px) 100vw, 380px"
+          className="mt-6 h-auto w-full max-w-[24rem] sm:mb-6 sm:mt-0"
+        />
+      </div>
 
       {/* Asanapraxis im Garten */}
       <div className="mt-12 max-w-xl">

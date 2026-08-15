@@ -1,13 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import BilderStreifen from "./BilderStreifen";
 
 const nav = [
   { href: "/yoga", label: "Hatha-Yoga" },
   { href: "/kindertanz", label: "Kreativer Kindertanz" },
   { href: "/ueber-mich", label: "Über mich" },
-  { href: "/bilder", label: "Bilder" },
   { href: "/termine", label: "Termine" },
   { href: "/kontakt", label: "Kontakt" },
 ];
@@ -40,8 +41,8 @@ export default function SiteFrame({
       </Link>
 
       <div className="mx-auto max-w-4xl px-7 pb-16 pt-14 sm:pt-20">
-        {/* Kopf – konstant auf allen Seiten */}
-        <header>
+        {/* Kopf – konstant auf allen Seiten, auf der Willkommensseite mit Zeichen */}
+        <header className="flex items-start gap-6">
           <Link href="/" className="inline-block">
             <h1 className="font-display text-[2.75rem] font-medium leading-none tracking-tight text-ink sm:text-6xl">
               Yoga &amp; Kindertanz
@@ -50,7 +51,20 @@ export default function SiteFrame({
               Heide Kinzelhofer
             </p>
           </Link>
+          {pathname === "/" && (
+            <Image
+              src="/skizzen/meditation.png"
+              alt=""
+              width={470}
+              height={484}
+              priority
+              className="mt-1 h-auto w-16 shrink-0 sm:w-20"
+            />
+          )}
         </header>
+
+        {/* Bilderreihe als Streifen – nur auf „Über mich“, direkt unter dem Kopf */}
+        {pathname.startsWith("/ueber-mich") && <BilderStreifen />}
 
         {/* Trennlinie */}
         <div className="mb-9 mt-9 h-px w-28 bg-rule" />
