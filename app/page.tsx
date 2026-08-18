@@ -16,16 +16,35 @@ const delay = (ms: number) =>
 export default function Willkommen() {
   return (
     <article className="md:-ml-[15.5rem]">
-      {/* Skizzenzeile direkt unter dem Titel */}
-      <div className="reveal-wipe -mt-2 max-w-sm" style={delay(0)}>
-        <Image
-          src="/skizzen/folge-1.png"
-          alt=""
-          width={1400}
-          height={342}
-          priority
-          className="h-auto w-full"
-        />
+      {/* Beide Skizzenzeilen als ein langer Fries unter dem Titel.
+          Die flex-Werte entsprechen den Seitenverhältnissen, dadurch
+          sind beide Reihen gleich hoch. */}
+      <div
+        className="reveal-wipe -mt-2 flex flex-col gap-2 sm:flex-row sm:items-end sm:gap-5"
+        style={delay(0)}
+      >
+        <div style={{ flex: "4.09 1 0%" }}>
+          <Image
+            src="/skizzen/folge-1.png"
+            alt=""
+            width={1400}
+            height={342}
+            priority
+            sizes="(max-width: 640px) 100vw, 460px"
+            className="h-auto w-full"
+          />
+        </div>
+        <div style={{ flex: "3.35 1 0%" }}>
+          <Image
+            src="/skizzen/folge-2.png"
+            alt=""
+            width={1400}
+            height={418}
+            priority
+            sizes="(max-width: 640px) 100vw, 375px"
+            className="h-auto w-full"
+          />
+        </div>
       </div>
 
       {/* Register und Porträt rücken eng zusammen */}
