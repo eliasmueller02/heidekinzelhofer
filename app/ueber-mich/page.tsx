@@ -34,7 +34,7 @@ export default function UeberMich() {
                 Yoga.
               </p>
               <p>
-                Seit über 30 Jahren begleiten mich Tanz und Yoga &ndash; als
+                Seit über 30 Jahren begleiten mich Tanz und Yoga - als
                 Übende, als Tänzerin und als Lehrende.
               </p>
             </Prose>
@@ -43,7 +43,7 @@ export default function UeberMich() {
 
         <Figure
           src="/UeberMich01.jpg"
-          alt="Heide streckt lachend ein Bein zur Kamera – barfuß im hohen Gras, in der Abendsonne"
+          alt="Heide streckt lachend ein Bein zur Kamera - barfuß im hohen Gras, in der Abendsonne"
           ratio="aspect-[2/3]"
           priority
         />
@@ -75,7 +75,7 @@ export default function UeberMich() {
       </section>
 
 
-      {/* Tanz am Wasser – vier gleich große Bilder über die ganze Seite */}
+      {/* Tanz am Wasser - vier gleich große Bilder über die ganze Seite */}
       <div className="mt-14 grid grid-cols-2 gap-4 md:-ml-[15.5rem] md:grid-cols-4 md:gap-6">
         {[
           {
@@ -84,7 +84,7 @@ export default function UeberMich() {
           },
           {
             src: "/yoga/yoga-7722.jpg",
-            alt: "Heide von hinten, die Arme erhoben, ein Bein angewinkelt – am Schilfufer",
+            alt: "Heide von hinten, die Arme erhoben, ein Bein angewinkelt - am Schilfufer",
           },
           {
             src: "/yoga/yoga-7756.jpg",

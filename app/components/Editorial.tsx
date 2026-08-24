@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-/* Seitentitel – Cormorant-Display, wie das Überschrift-Element der Referenz */
+/* Seitentitel - Cormorant-Display, wie das Überschrift-Element der Referenz */
 export function PageTitle({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="font-display text-[2rem] font-medium leading-tight tracking-tight text-ink sm:text-[2.5rem]">
@@ -18,7 +18,7 @@ export function Heading({ children }: { children: React.ReactNode }) {
   );
 }
 
-/* Handschriftliches Zitat in Stift-Blau – wie die Skizzen-Notizen */
+/* Handschriftliches Zitat in Stift-Blau - wie die Skizzen-Notizen */
 export function Lead({ children }: { children: React.ReactNode }) {
   return (
     <p className="font-hand text-[1.7rem] leading-snug text-pen sm:text-[2rem]">
@@ -73,7 +73,7 @@ export function Figure({
   );
 }
 
-/* Freigestellte Skizze (transparentes PNG) – liegt direkt auf dem Papier */
+/* Freigestellte Skizze (transparentes PNG) - liegt direkt auf dem Papier */
 export function Sketch({
   src,
   alt,
@@ -107,7 +107,7 @@ export function Sketch({
   );
 }
 
-/* Reservierter Bildplatz – wird später durch echte Fotos ersetzt */
+/* Reservierter Bildplatz - wird später durch echte Fotos ersetzt */
 export function FigurePlaceholder({
   ratio = "aspect-[3/2]",
   className = "mt-12 max-w-md",

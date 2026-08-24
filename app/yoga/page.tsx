@@ -47,7 +47,7 @@ export default function Yoga() {
               </p>
               <p>
                 Die Asanas passe ich den körperlichen Möglichkeiten der Übenden
-                an (auch mit Blöcken und Hilfsmitteln) &ndash; und nicht
+                an (auch mit Blöcken und Hilfsmitteln) - und nicht
                 umgekehrt. So wird Yoga zu einer Quelle des Wohlbefindens, das
                 sich auch jenseits der &bdquo;Matte&ldquo; abspielt, und uns
                 Gelassenheit und innere Ruhe gibt.
@@ -78,7 +78,7 @@ export default function Yoga() {
               Regelmäßiges Üben verbessert die Aufrichtung, vergrößert das
               Atemvolumen, schult die Konzentration und stärkt die Körpermitte.
               Durchblutung und Verdauung werden angeregt, Stress lässt sich
-              leichter bewältigen &ndash; so entsteht ein ganzheitliches
+              leichter bewältigen - so entsteht ein ganzheitliches
               Wohlbefinden, das weit über die Yogastunde hinaus trägt.
             </p>
             <p>
@@ -100,9 +100,9 @@ export default function Yoga() {
               einen guten Bogen:
             </p>
             <p>
-              Asanas &ndash; Körperübungen
+              Asanas - Körperübungen
               <br />
-              Pranayama &ndash; Atemübungen
+              Pranayama - Atemübungen
               <br />
               Meditation
               <br />
@@ -130,7 +130,7 @@ export default function Yoga() {
       <div className="mt-4 max-w-2xl sm:flex sm:items-end sm:gap-8">
         <Sketch
           src="/skizzen/meditation.png"
-          alt="Gezeichnete Figur im Sitz, die Arme geöffnet – der Schluss der Übungsfolge"
+          alt="Gezeichnete Figur im Sitz, die Arme geöffnet - der Schluss der Übungsfolge"
           width={470}
           height={484}
           caption="Aus meinem Skizzenbuch: eine Übungsfolge"
@@ -162,7 +162,7 @@ export default function Yoga() {
         <div className="min-w-0 flex-1">
           <p className="font-serif text-[16px] leading-[1.8] text-ink-soft">
             Der Einstieg ist jederzeit möglich. Alle Körper sind willkommen. Es
-            sind keine Grundkenntnisse erforderlich &ndash; es gibt Abstufungen
+            sind keine Grundkenntnisse erforderlich - es gibt Abstufungen
             innerhalb der Klassen. Die{" "}
             <Link
               href="/termine"

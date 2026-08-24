@@ -29,7 +29,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Echtes Bokeh – Lichtflecken aus dem Original-Foto, in die
+/* Echtes Bokeh - Lichtflecken aus dem Original-Foto, in die
    Papier-Palette umgefärbt. Fixe Ebene hinter dem Inhalt. */
 body::before {
   content: "";

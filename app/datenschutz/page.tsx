@@ -73,7 +73,7 @@ export default function Datenschutz() {
           Auf der Kontaktseite biete ich eine Karte von Google Maps an
           (Anbieter: Google Ireland Limited, Gordon House, Barrow Street,
           Dublin 4, Irland), um den Kursort leichter auffindbar zu machen. Die
-          Karte wird erst geladen, wenn Sie sie aktiv anklicken &ndash; erst
+          Karte wird erst geladen, wenn Sie sie aktiv anklicken - erst
           dann stellt Ihr Browser eine Verbindung zu Servern von Google her
           und es werden Daten (unter anderem Ihre IP-Adresse) an Google
           übertragen (Art. 6 Abs. 1 lit. a DSGVO). Weitere Informationen
@@ -102,8 +102,8 @@ export default function Datenschutz() {
         <p>
           Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung,
           Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und
-          Widerspruch zu. Eine erteilte Einwilligung &ndash; etwa zum Laden
-          der Google-Maps-Karte &ndash; können Sie jederzeit mit Wirkung für
+          Widerspruch zu. Eine erteilte Einwilligung - etwa zum Laden
+          der Google-Maps-Karte - können Sie jederzeit mit Wirkung für
           die Zukunft widerrufen. Wenn Sie glauben, dass die Verarbeitung
           Ihrer Daten
           gegen das Datenschutzrecht verstößt, können Sie sich bei mir (siehe{" "}

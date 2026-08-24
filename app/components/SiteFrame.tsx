@@ -41,7 +41,7 @@ export default function SiteFrame({
       </Link>
 
       <div className="mx-auto max-w-4xl px-7 pb-16 pt-14 sm:pt-20">
-        {/* Kopf – konstant auf allen Seiten, auf der Willkommensseite mit Zeichen */}
+        {/* Kopf - konstant auf allen Seiten, auf der Willkommensseite mit Zeichen */}
         <header className="flex items-start gap-6">
           <Link href="/" className="inline-block">
             <h1 className="font-display text-[2.75rem] font-medium leading-none tracking-tight text-ink sm:text-6xl">
@@ -63,7 +63,7 @@ export default function SiteFrame({
           )}
         </header>
 
-        {/* Bilderreihe als Streifen – nur auf „Über mich“, direkt unter dem Kopf */}
+        {/* Bilderreihe als Streifen - nur auf „Über mich“, direkt unter dem Kopf */}
         {pathname.startsWith("/ueber-mich") && <BilderStreifen />}
 
         {/* Trennlinie */}
@@ -102,7 +102,7 @@ export default function SiteFrame({
         {/* Schlanke Fußzeile */}
         <footer className="mt-24 border-t border-rule pt-6 text-[13px] text-ink-faint md:pl-[15.5rem]">
           <p>
-            Heide Kinzelhofer, 1220 Wien &ndash; Telefon{" "}
+            Heide Kinzelhofer, 1220 Wien - Telefon{" "}
             <a href="tel:+4369911445712" className="hover:text-pen">
               0699 11 44 57 12
             </a>

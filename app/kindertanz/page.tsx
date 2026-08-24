@@ -34,7 +34,7 @@ export default function Kindertanz() {
               <p>
                 Wir gehen in die Welt unserer phantasiereichen Ideen. Ich
                 unterrichte kreativen Kindertanz für Kinder von 4 bis 10 Jahren
-                &ndash; das schöpferische Tun und das Vergnügen am eigenen
+                - das schöpferische Tun und das Vergnügen am eigenen
                 Körper stehen dabei im Vordergrund.
               </p>
             </Prose>
@@ -50,13 +50,13 @@ export default function Kindertanz() {
       </div>
 
       <section className="mt-14">
-        <Heading>Die Kleinen TänzerInnen &middot; 4&ndash;5 Jahre</Heading>
+        <Heading>Die Kleinen TänzerInnen &middot; 4-5 Jahre</Heading>
         <div className="mt-5">
           <Prose>
             <p>
               Gemeinsam entwickeln wir Tänze, setzen Lieder in Bewegung um und
               arbeiten mit Sprache, Gedichten sowie verschiedenen Materialien.
-              Themenbezogene Improvisationen stehen im Vordergrund &ndash; ich
+              Themenbezogene Improvisationen stehen im Vordergrund - ich
               fördere das schöpferische Tun und das Vergnügen am eigenen
               Körper. Das gemeinsame Tanzen stärkt das soziale Bewusstsein und
               lässt die Kinder spielerisch ihre Kreativität entfalten.
@@ -66,13 +66,13 @@ export default function Kindertanz() {
       </section>
 
       <section className="mt-12">
-        <Heading>Die Großen TänzerInnen &middot; 6&ndash;10 Jahre</Heading>
+        <Heading>Die Großen TänzerInnen &middot; 6-10 Jahre</Heading>
         <div className="mt-5">
           <Prose>
             <p>
               Hier entwickle ich mit den Kindern verstärkt die koordinativen
               Fähigkeiten. Über ein Semester arbeiten wir an einem Stück und
-              choreografieren es gemeinsam &ndash; Bewegungsfreude und
+              choreografieren es gemeinsam - Bewegungsfreude und
               Kreativität stehen dabei an erster Stelle. Die Kinder lernen,
               ihren Körper bewusst einzusetzen und sich tänzerisch
               auszudrücken. Durch das gemeinsame Erarbeiten einer Choreografie

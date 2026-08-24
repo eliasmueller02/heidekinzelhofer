@@ -20,7 +20,7 @@ export default function Termine() {
         <div className="mt-7">
           <Prose>
             <p>
-              Es sind keine Grundkenntnisse erforderlich &ndash; innerhalb der
+              Es sind keine Grundkenntnisse erforderlich - innerhalb der
               Klassen gibt es Abstufungen. Einzelstunden biete ich nach
               Vereinbarung an.
             </p>
@@ -33,11 +33,11 @@ export default function Termine() {
         <div className="mt-5">
           <Prose>
             <p>
-              Montag, 19:30&ndash;21:00 Uhr
+              Montag, 19:30-21:00 Uhr
               <br />
-              Donnerstag, 9:30&ndash;11:00 Uhr
+              Donnerstag, 9:30-11:00 Uhr
               <br />
-              Donnerstag, 18:10&ndash;19:40 Uhr
+              Donnerstag, 18:10-19:40 Uhr
             </p>
             <p>
               Die Kurse dauern jeweils 90 Minuten und finden im Yogahome 22
@@ -61,11 +61,11 @@ export default function Termine() {
         <div className="mt-5">
           <Prose>
             <p>
-              Montag, 15:50&ndash;16:30 Uhr &ndash; Die Kleinen TänzerInnen
-              (4&ndash;5 Jahre)
+              Montag, 15:50-16:30 Uhr - Die Kleinen TänzerInnen
+              (4-5 Jahre)
               <br />
-              Montag, 16:45&ndash;17:35 Uhr &ndash; Die Großen TänzerInnen
-              (6&ndash;10 Jahre)
+              Montag, 16:45-17:35 Uhr - Die Großen TänzerInnen
+              (6-10 Jahre)
             </p>
           </Prose>
         </div>

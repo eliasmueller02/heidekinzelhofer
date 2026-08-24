@@ -94,7 +94,7 @@ export default function Willkommen() {
               Schön, dass du da bist.
             </p>
             <p className="mt-2 font-serif text-[15px] italic text-ink-soft">
-              &mdash; Heide
+              - Heide
             </p>
           </div>
         </aside>
