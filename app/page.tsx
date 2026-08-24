@@ -91,7 +91,7 @@ export default function Willkommen() {
           </figure>
           <div>
             <p className="max-w-[14rem] rotate-[-1.5deg] font-hand text-[1.625rem] leading-snug text-pen md:text-[1.75rem]">
-              Schön, dass du hier bist.
+              Schön, dass du da bist.
             </p>
             <p className="mt-2 font-serif text-[15px] italic text-ink-soft">
               &mdash; Heide
