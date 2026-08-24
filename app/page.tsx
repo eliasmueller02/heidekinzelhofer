@@ -93,9 +93,6 @@ export default function Willkommen() {
             <p className="max-w-[14rem] rotate-[-1.5deg] font-hand text-[1.625rem] leading-snug text-pen md:text-[1.75rem]">
               Schön, dass du da bist.
             </p>
-            <p className="mt-2 font-serif text-[15px] italic text-ink-soft">
-              - Heide
-            </p>
           </div>
         </aside>
       </div>
