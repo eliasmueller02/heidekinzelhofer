@@ -20,12 +20,18 @@ export default function Datenschutzhinweis() {
       /* Privater Modus o. Ä. – dann zeigen wir den Hinweis einfach an. */
     }
     if (!zeigen) return;
-    setSichtbar(true);
-    /* Sanft einblenden. Bewusst als Übergang und nicht als Animation:
+
+    /* Die Zustände werden aus Timern heraus gesetzt, nicht synchron im
+       Effekt – so entstehen keine kaskadierenden Renders.
+       Sanft einblenden bewusst als Übergang und nicht als Animation:
        Der Endzustand hängt an der Klasse, nicht am Ablauf – der Hinweis
        ist also auch dann sichtbar, wenn der Browser Animationen bremst. */
-    const timer = window.setTimeout(() => setEingeblendet(true), 900);
-    return () => window.clearTimeout(timer);
+    const anzeigen = window.setTimeout(() => setSichtbar(true), 0);
+    const einblenden = window.setTimeout(() => setEingeblendet(true), 900);
+    return () => {
+      window.clearTimeout(anzeigen);
+      window.clearTimeout(einblenden);
+    };
   }, []);
 
   if (!sichtbar) return null;
