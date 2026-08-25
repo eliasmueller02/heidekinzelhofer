@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { EB_Garamond, Cormorant_Garamond, Caveat } from "next/font/google";
 import "./globals.css";
 import SiteFrame from "./components/SiteFrame";
+import Datenschutzhinweis from "./components/Datenschutzhinweis";
 
 const eb = EB_Garamond({
   variable: "--font-eb",
@@ -40,6 +41,7 @@ export default function RootLayout({
     >
       <body className="bg-paper font-serif text-ink antialiased">
         <SiteFrame>{children}</SiteFrame>
+        <Datenschutzhinweis />
       </body>
     </html>
   );
