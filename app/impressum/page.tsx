@@ -81,8 +81,7 @@ export default function Impressum() {
       <Section title="Urheberrecht">
         <p>
           Alle Inhalte dieser Webseite (Bilder, Fotos, Texte) unterliegen dem
-          Urheberrecht. Bildrechte: Petra Leimhofer, Heide Kinzelhofer,
-          Bernadette Al Achour.
+          Urheberrecht. Bildrechte: Elza Schäfer.
         </p>
       </Section>
 
